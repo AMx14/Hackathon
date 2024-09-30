@@ -63,15 +63,22 @@ export default function LegalPages() {
               </p>
               <h3 className="text-xl font-semibold mb-2">3. Disclaimer</h3>
               <p className="mb-4">
-                The materials on our website are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                The materials on our website are provided on an &apos;as is&apos; basis. We make no warranties,
+                expressed or implied, and hereby disclaim and negate all other warranties including, without limitation,
+                implied warranties or conditions of merchantability, fitness for a particular purpose, or
+                non-infringement of intellectual property or other violation of rights.
               </p>
               <h3 className="text-xl font-semibold mb-2">4. Limitations</h3>
               <p className="mb-4">
-                In no event shall we or our suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use our services.
+                In no event shall we or our suppliers be liable for any damages (including, without limitation, damages
+                for loss of data or profit, or due to business interruption) arising out of the use or inability to use
+                our services.
               </p>
+
               <h3 className="text-xl font-semibold mb-2">5. Revisions and Errata</h3>
               <p className="mb-4">
-                The materials appearing on our website could include technical, typographical, or photographic errors. We do not warrant that any of the materials on our website are accurate, complete, or current.
+                The materials appearing on our website could include technical, typographical, or photographic errors.
+                We do not warrant that any of the materials on our website are accurate, complete, or current.
               </p>
             </ScrollArea>
           </TabsContent>

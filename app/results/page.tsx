@@ -55,10 +55,10 @@ export default function ResultsPage() {
             <div className="flex flex-col items-center">
               <div className="w-48 h-48 relative mb-4">
                 <Progress
-                  value={results.confidence}
-                  className="w-48 h-48 rounded-full"
-                  indicatorClassName="bg-primary"
+                    value={results.confidence}
+                    className="w-48 h-48 rounded-full bg-primary"
                 />
+
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-4xl font-bold">{results.confidence}%</span>
                 </div>

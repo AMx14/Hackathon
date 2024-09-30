@@ -170,7 +170,7 @@ export default function HomePage() {
             ].map((testimonial, index) => (
               <Card key={index} className="bg-gray-700">
                 <CardContent className="p-6">
-                  <p className="text-lg mb-4">"{testimonial.quote}"</p>
+                  <p className="text-lg mb-4">&quot;{testimonial.quote}&quot;</p>
                   <p className="font-semibold">- {testimonial.name}</p>
                 </CardContent>
               </Card>

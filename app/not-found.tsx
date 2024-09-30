@@ -29,7 +29,7 @@ export default function NotFoundPage() {
         </CardHeader>
         <CardContent>
           <p className="text-center text-muted-foreground mb-6">
-            Oops! The page you are looking for doesn't exist.
+            Oops! The page you are looking for doesn&apos;t exist.
           </p>
           <form onSubmit={handleSearch} className="flex space-x-2 mb-6">
             <Input

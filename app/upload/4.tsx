@@ -125,10 +125,12 @@ export default function UploadPage() {
             id="file-upload"
           />
           <label htmlFor="file-upload">
-            <Button as="span">Select File</Button>
+            <span>
+              <Button>Select File</Button>
+            </span>
           </label>
           {file && (
-            <p className="mt-4 text-sm text-muted-foreground">
+              <p className="mt-4 text-sm text-muted-foreground">
               Selected file: {file.name}
             </p>
           )}
