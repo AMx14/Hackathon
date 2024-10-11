@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -17,7 +17,7 @@ interface AnalysisResults {
   distribution: { name: string; value: number }[]
 }
 
-export default function ResultsPage() {
+function ResultsContent() {
   const [feedback, setFeedback] = useState<'up' | 'down' | null>(null)
   const [results, setResults] = useState<AnalysisResults | null>(null)
   const searchParams = useSearchParams()
@@ -45,8 +45,8 @@ export default function ResultsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="min-h-screen bg-background text-foreground py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
         <Card className="mb-8">
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-center">Algorithm Identified: {results.algorithm}</CardTitle>
@@ -175,7 +175,15 @@ export default function ResultsPage() {
             </Button>
           </CardContent>
         </Card>
+        </div>
       </div>
-    </div>
+  )
+}
+
+export default function ResultsPage() {
+  return (
+      <Suspense fallback={<div>Loading results...</div>}>
+        <ResultsContent />
+      </Suspense>
   )
 }
